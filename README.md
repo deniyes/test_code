@@ -5,7 +5,9 @@ some codes for test
 
 当使用setgid时，sigwaitinfo会出现段错误，而sigwait就没有这个问题；
 推测与Linux NPTL使用前两个实时信号有关系；
+
 strace结果如下：
+
 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f4115cce000
 brk(0)                                  = 0x1b43000
 brk(0x1b64000)                          = 0x1b64000
