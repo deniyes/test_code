@@ -29,5 +29,6 @@ tgkill(14571, 14572, SIGRT_1 <unfinished ...>
 +++ killed by SIGSEGV +++
 Segmentation fault
 
+
 竟然使用了tgkill向线程发送了实时信号1；
 具体原因不清楚；有待研究；
